@@ -1,0 +1,1 @@
+CREATE TABLE IF NOT EXISTS tasks(id SERIAL PRIMARY KEY,title TEXT NOT NULL,status TEXT DEFAULT 'To do',priority TEXT DEFAULT 'Medium',assignee TEXT DEFAULT 'ME',due_label TEXT DEFAULT 'New',created_at TIMESTAMPTZ DEFAULT NOW());

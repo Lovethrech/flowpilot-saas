@@ -1,0 +1,1 @@
+export default defineNuxtConfig({css:['~/assets/css/main.css'],devtools:{enabled:false},runtimeConfig:{databaseUrl:process.env.DATABASE_URL||''},app:{head:{title:'FlowPilot | Calm project clarity',meta:[{name:'description',content:'A focused, glassmorphic SaaS MVP for small-team project clarity.'},{name:'theme-color',content:'#10112b'}]}}})

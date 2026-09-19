@@ -1,0 +1,1 @@
+import{addTask}from'../utils/store.js';export default defineEventHandler(async event=>{const body=await readBody(event);if(!body?.title)throw createError({statusCode:400,statusMessage:'Task title is required.'});return{task:await addTask(body)}})
